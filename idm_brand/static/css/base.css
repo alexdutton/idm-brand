@@ -1,0 +1,21 @@
+.pad-1 {
+    padding: 0 1em;
+}
+
+.focal-box {
+    border: 1px solid lightslategray;
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+    border-radius: 0.5em;
+    padding: 1em;
+    margin: 2em;
+    max-width: 30em;
+}
+
+.focal-box > h1 {
+    margin-top: 0;
+}
+
+.focal-box hr {
+    margin: 1em 0;
+}

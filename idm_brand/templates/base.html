@@ -2,13 +2,24 @@
 <html>
 <head>
     <title>{{ title }}</title>
+    <link rel="stylesheet" href="{{ STATIC_URL }}lib/pure/pure-min.css" type="text/css">
+    <link rel="stylesheet" href="{{ STATIC_URL }}lib/academicons/css/academicons.css" type="text/css">
     <link rel="stylesheet" href="{{ STATIC_URL }}lib/components-font-awesome/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/base.css" type="text/css">
+    {% block extra_head %}{% endblock %}
 </head>
 <body>
-<header>{% block header %}{% endblock %}</header>
-<article>
+<header>
+    <div class="pure-g">
+        <div class="pure-u pure-u-sm-1">
+            <img class="pure-img" src="{{ STATIC_URL }}brand/ox_brand1_pos_rect.gif">
+        </div>
+        <div class="pure-u pure-u-sm-1"><h1>Webauth</h1></div>
+    </div>
+</header>
+{% block content_wrapper %}
     {% block content %}
     {% endblock %}
-</article>
+{% endblock %}
 </body>
 </html>
