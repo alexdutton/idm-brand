@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}{{ title }}{% endblock %}</title>
+    <link rel="stylesheet" href="{{ STATIC_URL }}lib/pure/pure-min.css" type="text/css">
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="{{ STATIC_URL }}lib/pure/grids-responsive-old-ie-min.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="{{ STATIC_URL }}lib/pure/grids-responsive-min.css">
+    <!--<![endif]-->
+    <link rel="stylesheet" href="{{ STATIC_URL }}lib/academicons/css/academicons.css" type="text/css">
+    <link rel="stylesheet" href="{{ STATIC_URL }}lib/components-font-awesome/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/base.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="{{ STATIC_URL}}js/menus.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL}}lib/jquery/dist/jquery.min.js"></script>
+    <!--<link rel="stylesheet" href="{{ STATIC_URL}}lib/bootstrap/dist/css/bootstrap.min.css">-->
+    {% block extra_head %}{% endblock %}
+</head>
+<body>
+
+<div id="layout">
+    <div id="menu">
+        <img src="{{ STATIC_URL }}brand/ox_brand3_rev_rect.gif" alt="" class="brandmark">
+        <div class="pure-menu">
+            <a class="pure-menu-heading" href="/">{% block site_name %}{{ site_name }}{% endblock %}</a>
+
+
+            {% block nav %}
+            {% endblock %}
+        </div>
+    </div>
+
+    <div id="main">
+        <div id="header">
+            {% block header %}<h1>{% block h1_title %}Hello{% endblock %}</h1>{% endblock %}
+        </div>
+        {% block content_wrapper %}
+        <div id="content">
+        {% block content %}
+        {% endblock %}
+    </div>
+    {% endblock %}
+
+</div>
+</div>
+
+</body>
+</html>
