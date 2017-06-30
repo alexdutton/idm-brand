@@ -181,3 +181,12 @@ body {
 }
 
 /* End labels */
+
+
+.default-button-handler {
+  width: 0;
+  height: 0;
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
