@@ -1,0 +1,27 @@
+{
+  "name": "academicons",
+  "description": "Academicons",
+  "homepage": "https://jpswalsh.github.io/academicons/",
+  "license": [
+    "OFL-1.1",
+    "MIT",
+    "CC-BY-3.0"
+  ],
+  "main": [
+    "css/academicons.css"
+  ],
+  "ignore": [
+    "**/.*"
+  ],
+  "version": "1.7.0",
+  "_release": "1.7.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v1.7.0",
+    "commit": "258cd09fe14a642283f68284d4ffbc12b36f98c7"
+  },
+  "_source": "https://github.com/jpswalsh/academicons.git",
+  "_target": "^1.7.0",
+  "_originalSource": "academicons",
+  "_direct": true
+}
