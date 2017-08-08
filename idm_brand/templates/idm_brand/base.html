@@ -36,14 +36,27 @@
         <div id="header">
             {% block header %}<h1>{% block h1_title %}Hello{% endblock %}</h1>{% endblock %}
         </div>
+        {% block sub_nav %}
+        {% if object and object.sub_nav_template %}
+        <div id="sub-nav">
+            {% include object.sub_nav_template %}
+        </div>
+        {% elif identity and identity.sub_nav_template and not self %}
+        <div id="sub-nav">
+            {% with identity as object %}
+            {% include identity.sub_nav_template %}
+            {% endwith %}
+        </div>
+        {% endif %}
+        {% endblock %}
         {% block content_wrapper %}
         <div id="content">
-        {% block content %}
+            {% block content %}
+            {% endblock %}
+        </div>
         {% endblock %}
-    </div>
-    {% endblock %}
 
-</div>
+    </div>
 </div>
 
 </body>

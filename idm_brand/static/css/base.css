@@ -1,18 +1,18 @@
 /* latin-ext */
 @font-face {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Raleway'), local('Raleway-Regular'), url(../webfonts/raleway_thin-webfont.woff) format('woff');
-  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Raleway'), local('Raleway-Regular'), url(../webfonts/raleway_thin-webfont.woff) format('woff');
+    unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
 }
 /* latin */
 @font-face {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Raleway'), local('Raleway-Regular'), url(../webfonts/raleway_thin-webfont.woff) format('woff');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Raleway'), local('Raleway-Regular'), url(../webfonts/raleway_thin-webfont.woff) format('woff');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
 
 body {
@@ -80,7 +80,7 @@ body {
 }
 
 /*#content h1, #content h2, #content h3, #content h4, #content h5, #content h6 {*/
-    /*font-family: Raleway, sans-serif;*/
+/*font-family: Raleway, sans-serif;*/
 /*}*/
 
 .pad-1 {
@@ -184,9 +184,53 @@ body {
 
 
 .default-button-handler {
-  width: 0;
-  height: 0;
-  padding: 0;
-  border: 0;
-  margin: 0;
+    width: 0;
+    height: 0;
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+ul.pagination {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+ul.pagination li {
+    margin: 0;
+
+    display: inline;
+}
+
+
+
+.button-success,
+.button-error,
+.button-warning,
+.button-secondary {
+    color: white;
+}
+
+.button-success {
+    background: rgb(28, 184, 65); /* this is a green */
+}
+
+.button-error {
+    background: rgb(202, 60, 60); /* this is a maroon */
+}
+
+.button-warning {
+    background: rgb(223, 117, 20); /* this is an orange */
+}
+
+.button-secondary {
+    background: rgb(66, 184, 221); /* this is a light blue */
+}
+
+
+#sub-nav {
+    margin-bottom: 1em;
 }
