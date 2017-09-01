@@ -234,3 +234,7 @@ ul.pagination li {
 #sub-nav {
     margin-bottom: 1em;
 }
+
+h1 a i.fa, h2 a i.fa, h3 a i.fa, h4 a i.fa, h5 a i.fa, h6 a i.fa {
+    font-size: 50%
+}
